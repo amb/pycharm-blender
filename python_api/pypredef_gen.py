@@ -84,7 +84,6 @@ INCLUDE_MODULES = (
     "bmesh",
     "bmesh.types",
     "bge",
-    "aud",
     "bgl",
     "blf",
     "mathutils",
@@ -1092,10 +1091,6 @@ def rna2predef(BASEPATH):
     if "bgl" in INCLUDE_MODULES:
         import bgl as module
         pymodule2predef(BASEPATH, "bgl", module, "Open GL functions (bgl)")
-
-    if "aud" in INCLUDE_MODULES:
-        import aud as module
-        pymodule2predef(BASEPATH, "aud", module, "Audio System (aud)")
 
     if "bmesh" in INCLUDE_MODULES:
         import bmesh as module
