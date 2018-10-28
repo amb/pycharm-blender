@@ -19,3 +19,7 @@ Project Structure.
 https://www.blender.org/download/
 
 https://www.jetbrains.com/pycharm/
+
+Windows instructions (to generate stubs):
+Copy & paste all files to your Blender directory and run `.\blender.exe -b -P python_api\pypredef_gen.py` (Powershell)
+It will generate the stubs into python_api/pypredef
